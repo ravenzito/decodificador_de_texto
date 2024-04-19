@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador e codificador</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mobile.css">
+    <link rel="shortcut icon" href="assets/lucario.png" type="image/x-icon">
+    <style>
+        body {
+          background-image: url("assets/lucario_background.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main container">
+        <header class="cabecalho">
+           <a href="https://bulbapedia.bulbagarden.net/wiki/Lucario_(Pok%C3%A9mon)">
+           <img src="assets/pokeball.png" alt="pokebola">
+           </a>
+           <h1>Mensagem Codificada</h1>
+        </header>
+
+        <div class="container__input">
+            <div class="input">
+                <textarea  id="input__texto" placeholder="Digite seu texto aqui..."></textarea>
+                <p><img src="assets/exclamacao.png" alt="ponto de exclamação"> Apenas letras maiusculas e sem acento!</p>
+            </div>
+            
+            <div id="output">
+                <img src="assets/lucario.png" alt="detetive Pikachu" height="330px" width="400px">
+                <h2>Sua mensagem aparecerá aqui!</h2>
+                <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+            </div>
+        </div>
+
+        
+        <div class="buttons">
+            <div class="container__button">
+                <button  onclick="criptografar()" class="button__criptografar">Criptografar</button>
+                <button  onclick="descriptografar()" class="button__descriptografar">Descriptografar</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://github.com/ravenzito"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        <h3>Desenvolvido por Yudi Kavaguti</h3>
+    </footer>
+
+    <script src="interacao/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
